@@ -18,6 +18,10 @@ public class Main{
         Arrays.sort(tempArray); // The temporary array is sorted in ascending order.
         return tempArray[1];
         //  The median is the middle element of the sorted array (index 1 since arrays are zero-indexed)
+        // However, it's not always guaranteed to be at index 1.
+        //The reason it works in this case is because tempArray is of size 3, and when sorted, the middle element will be at index 1.
+        // If the array size were different, such as 5, the middle element after sorting would be at index 2.
+        //For a more general approach, you can always calculate the index of the middle element as (tempArray.length - 1) / 2
     }
 
     // Partition function with modified pivot selection
