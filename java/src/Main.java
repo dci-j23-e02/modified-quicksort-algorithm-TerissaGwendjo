@@ -4,11 +4,10 @@ public class Main{
 
     public static void main(String[] args) {
 
-        int[] array = {9, 7, 5, 11, 12, 2, 14, 3, 10, 6}; // Initializes an array with unsorted elements.
+        int[] array = {10, 8, 6, 12, 13, 3, 15, 4, 11, 7}; // Initializes an array with unsorted elements.
         System.out.println("Original Array: " + Arrays.toString(array));
 
-        quicksort(array, 0, array.length - 1);
-        // Calls the quicksort function to sort the array.
+        quicksort(array, 0, array.length - 1);  // Calls the quicksort function to sort the array.
 
         System.out.println("Sorted Array: " + Arrays.toString(array));
     }
